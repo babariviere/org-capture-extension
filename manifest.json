@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Org Capture",
-  "version": "0.2.1",
+  "name": "Org Roam Capture",
+  "version": "0.3.0",
   "description": "A helper for capturing things via org-protocol in emacs: First, set up: http://orgmode.org/worg/org-contrib/org-protocol.html",
-  "homepage_url": "https://github.com/sprig/org-capture-extension",
+  "homepage_url": "https://github.com/babariviere/org-capture-extension",
 
   "background": {
     "persistent": false,
@@ -27,6 +27,12 @@
         "default": "Ctrl+Shift+L",
         "mac": "Command+Shift+L"
       }
+    }
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "babathriviere@gmail.com"
     }
   }
 }

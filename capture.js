@@ -27,12 +27,9 @@
   class Capture {
 
    createCaptureURI() {
-     var protocol = "capture";
-     var template = (this.selection_text != "" ? this.selectedTemplate : this.unselectedTemplate);
-     if (this.useNewStyleLinks)
-       return "org-protocol://"+protocol+"?template="+template+'&url='+this.encoded_url+'&title='+this.escaped_title+'&body='+this.selection_text;
-     else
-       return "org-protocol://"+protocol+":/"+template+'/'+this.encoded_url+'/'+this.escaped_title+'/'+this.selection_text;
+     var protocol = "roam-ref";
+     var template = "r";
+	 return "org-protocol://"+protocol+"?template="+template+'&ref='+this.encoded_url+'&title='+this.escaped_title+'&body='+this.selection_text;
     }
 
     constructor() {
